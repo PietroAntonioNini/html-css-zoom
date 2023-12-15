@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-body div {
-
-    background-color: black;
-    border: 1px solid red;
+body {
+    ;
 }
 
 /* Iizio Sezione Utenti */
@@ -16,14 +14,17 @@ body div #users {
     display: flex;
     flex-wrap: wrap;
 
+    margin: auto;
     padding: 50px;
+
+    background-color: black
 }
 
 body div #users .user-display {
     position: relative;
-    width: 150px;
-    height: 100px;
-    margin: 5px 3px;
+    width: 180px;
+    height: 130px;
+    margin: 5px 2px;
 }
 
 body div #users .user-display img {
@@ -49,5 +50,76 @@ body div #users .user-display span i {
     padding-right: 3px;
 }
 
-/* Iizio Sezione Utenti */
+/* Fine Sezione Utenti */
+
+/* Inizio Nav-bottom */
+
+#player {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 100vw;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#player section {
+    display: flex;
+    gap: 8px;
+}
+
+body div:nth-of-type(2) {
+
+    font-family: sans-serif;
+
+    background-color: #222222;
+}
+
+#mic, #webcam, #invite, #manage, #polling, 
+#share, #chat, #record, #rooms, #more-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    
+    position: relative;
+
+    padding: 10px 2px;
+
+    color: white;
+}
+
+#mic, #webcam, #share {
+    padding: 10px 25px 10px 10px;
+}
+
+#share .fa:first-of-type {
+    color: #4BC800;
+}
+
+#button-description {
+    font-size: 10px;
+}
+
+section div i:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+}
+
+#player section:nth-of-type(3) {
+    
+}
+
+#end {
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+
+    background-color: #4A4A4A;
+    color: red;
+}
+
 
