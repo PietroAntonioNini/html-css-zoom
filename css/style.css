@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body div {
+
+    background-color: black;
+    border: 1px solid red;
+}
+
+/* Iizio Sezione Utenti */
+
+body div #users {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 50px;
+}
+
+body div #users .user-display {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    margin: 5px 3px;
+}
+
+body div #users .user-display img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body div #users .user-display span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 4px 3px;
+
+    font-size: 11px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.548);
+}
+
+body div #users .user-display span i {
+    padding-right: 3px;
+}
+
+/* Iizio Sezione Utenti */
+
