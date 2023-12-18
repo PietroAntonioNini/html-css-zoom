@@ -4,37 +4,42 @@
     box-sizing: border-box;
 }
 
-body {
-    ;
-}
-
 /* Iizio Sezione Utenti */
 
-body div #users {
-    display: flex;
-    flex-wrap: wrap;
+body {
+    position: relative;
 
-    margin: auto;
-    padding: 50px;
+    font-family: sans-serif;
+}
+
+body #main {
+    position: relative;
 
     background-color: black
 }
 
-body div #users .user-display {
+#users {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 50px 50px 100px;
+}
+
+#users .user-display {
     position: relative;
     width: 180px;
     height: 130px;
     margin: 5px 2px;
 }
 
-body div #users .user-display img {
+#users .user-display img {
 
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-body div #users .user-display span {
+#users .user-display span {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -46,7 +51,7 @@ body div #users .user-display span {
     background-color: rgba(128, 128, 128, 0.548);
 }
 
-body div #users .user-display span i {
+#users .user-display span i {
     padding-right: 3px;
 }
 
@@ -54,26 +59,28 @@ body div #users .user-display span i {
 
 /* Inizio Nav-bottom */
 
+body div:nth-of-type(2) {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #222222;
+}
+
 #player {
     display: flex;
     justify-content: space-between;
 
     max-width: 100vw;
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 #player section {
     display: flex;
     gap: 8px;
-}
 
-body div:nth-of-type(2) {
-
-    font-family: sans-serif;
-
-    background-color: #222222;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 #mic, #webcam, #invite, #manage, #polling, 
@@ -109,7 +116,7 @@ section div i:nth-of-type(2) {
 }
 
 #player section:nth-of-type(3) {
-    
+    background-color: #4A4A4A;
 }
 
 #end {
@@ -118,8 +125,31 @@ section div i:nth-of-type(2) {
 
     padding: 10px;
 
-    background-color: #4A4A4A;
     color: red;
 }
 
+/* elementi visivi in alto */
+
+#view {
+    display: flex;
+    gap: 10px;
+
+    position: fixed;
+    top: 5px;
+    right: 5px;
+}
+
+#view a {
+    text-decoration: none;
+    
+    padding: 5px;
+    border-radius: 5px;
+    
+    color: white;
+    background-color: #424242;
+}
+
+#view a:first-child i {
+    margin-right: 5px;
+}
 
